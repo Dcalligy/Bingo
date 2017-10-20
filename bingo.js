@@ -45,11 +45,11 @@
 		 // TODO update global variable number and set it equal to the value of 
 		 //      global variable base added to a randomly selected number in the 
 		 //      range of 1 - 15
-		NUMBER = BASE + Math.floor((Math.random() * 15) + 1);
+		NUMBER = Math.floor((Math.random() * 15) + 1) + BASE;
 
 		// TODO Write an if condition that checks if the randomly generated number 
 		//      has not been used  
-		if(NUMBER == usedArray){
+		if(NUMBER != usedArray){
 			// the jQuery updates the HTML tag element with id "cell#"
 			// where the # is the random number!
 			$('#cell' + i).html(number);
