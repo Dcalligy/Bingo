@@ -1,6 +1,6 @@
  // This jQuery function verifies that the HTML document has loaded
- $(document).ready(function()
- {  
+ $(document).ready(function(){
+
    // TODO Create a var called usedArray of type Array with declared size 76 for the used bingo 
    //      numbers when generating the card
    var usedArray = new Array(76);   
@@ -83,8 +83,8 @@
 	}
 	 
 	 // This jQuery function responds to an HTML tag element with id = newCard being clicked
-	 $('#newCard').click(function()
-	 {
+	 $('#newCard').click(function(){
+
 		// TODO Call function resetUsedNumberArray to reset the used numbers
 		resetUsedNumberArray();
 
@@ -94,8 +94,8 @@
 	 
 	 // This jQuery function toggles the backgroundColor and text color 
 	 // based on what is it currently set to
-	 $('td').click(function()
-	 {
+	 $('td').click(function(){
+		 
 		var toggle = this.style;
 		toggle.backgroundColor = toggle.backgroundColor? "":"#333";
 		toggle.color = toggle.color? "":"#fff";
