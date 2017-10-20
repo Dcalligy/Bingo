@@ -26,7 +26,7 @@
 	// it is the main function of the JavaScript and jQuery that manages
 	// the bingo card creation and updating during play
 	
-	function intit(){
+	function init(){
 		 // TODO Write a for loop that loops 24 times and calls function fillCard() 
 		 //      passing the counter var as an argument
 		 for(var i = 0; i < 24; i++){
