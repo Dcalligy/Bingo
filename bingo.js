@@ -15,13 +15,11 @@ $(document).ready(function()){
 	var BASE = 0;
 
 	init();
+
 	// the main fucntion of the JavaScript and jQuery that manages
 	// the bing card creation and updating during play.
-
 	function init(){
-
 		for(var i = 0; i < 24; i++){
-
 			fillCard(i);
 		}
 	}
@@ -50,7 +48,6 @@ $(document).ready(function()){
 	}
 
 	funcion resetUsedNumberArray(){
-
 		for(var i = 1; i < usedArray.length; i++){
 			usedArray[i] = false;
 		}
@@ -60,10 +57,8 @@ $(document).ready(function()){
 
 	// This jQuery function responds to an HTML tag element with id = newCard being clicked
 	$('#newCard').click(function(){
-
 		// call function resetUsedNumberArray to reset the used numbers
 		resetUsedNumberArray();
-
 		// call function init to generate a new bingo card
 		init();
 	});
