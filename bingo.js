@@ -18,8 +18,7 @@
    var NUMBER = 0;
    // TODO Create a global var called base and initialize it to 0
    var BASE = 0;
-   
-   
+     
    // TODO call function init()
    init();
    
@@ -27,7 +26,7 @@
 	// it is the main function of the JavaScript and jQuery that manages
 	// the bingo card creation and updating during play
 	
-	function inti(){
+	function intit(){
 		 // TODO Write a for loop that loops 24 times and calls function fillCard() 
 		 //      passing the counter var as an argument
 		 for(var i = 0; i < 24; i++){
@@ -67,7 +66,7 @@
 		// TODO Write the else leg of the above if condition 
 		else{
 			// TODO using recursion call this function again
-			fillCard(i);		
+			return fillCard(i);		
 		}
 	 }
 	 
