@@ -12,8 +12,8 @@ $(document).ready(function(){
 	   */
 	var baseArray = new Array(0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4,4,4,4,4);
 	   
-	var NUMBER = 0;
-	var BASE = 0;
+	var number = 0;
+	var base = 0;
 
 	init();
 
@@ -26,16 +26,16 @@ $(document).ready(function(){
 	}
 
 	function fillCard(i) {
-		BASE = baseArray[i] * 15;
+		base = baseArray[i] * 15;
 
-		NUMBER = Math.floor((Math.random() * 15) + 1) + BASE;
+		number = base + Math.floor((Math.random() * 15) + 1);
 
-		if (NUMBER != usedArray) {
+		if (usedArray[number] != true) {
 			// the jQuery updates the HTML tag element with id "cell#"
 			// where the # is the random number!
 			$('#cell' + i).html(number);
 
-			usedArray[NUMBER] = true;
+			usedArray[number] = true;
 
 			// set the background and text color for new game
 			var id = "cell" + i;
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		}
 		else {
 			// recursion call this function again
-			return fillCard(i);
+			fillCard(i);
 		}
 	}
 	
